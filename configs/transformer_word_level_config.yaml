@@ -3,9 +3,9 @@ joeynmt_version: "2.0.0"
 
 
 data:
-    train: "data/train.tok"
-    dev:   "data/dev"
-    test:  "data/test"
+    train: "data/train_tok/train_tok"
+    dev:   "data/dev/dev"
+    test:  "data/test/test"
     dataset_type: "plain"
     src:
         lang: "en"
@@ -76,8 +76,8 @@ model:
     init_gain: 1.0
     embed_initializer: "xavier_uniform"
     embed_init_gain: 1.0
-    tied_embeddings: True
-    tied_softmax: True
+    tied_embeddings: False
+    tied_softmax: False
     encoder:
         type: "transformer"
         num_layers: 4
